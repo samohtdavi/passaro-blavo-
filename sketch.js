@@ -22,7 +22,7 @@ function setup(){
     caixalonga2 = new caixinha (810,440,300,PI/2) 
     passarinhocarioca= new pasarrobravo(10,10)                  
 }
-
+//TESTANDOXDZIHNOS//
 function draw(){
     background(0);
     Engine.update(engine);

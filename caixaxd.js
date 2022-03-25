@@ -5,4 +5,4 @@ class caixinha extends Box {
       this.image=loadImage("wood2.png");
     }
  
-  };
+  }
