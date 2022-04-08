@@ -3,8 +3,11 @@ const World= Matter.World;
 const Bodies = Matter.Bodies;
 
 var engine, world;
-var box1;
-
+var box1; 
+var temumamontanhaeaoladodamontanhatemumsoleamontanhanãopegafogodejeitonenhum 
+function preload(){
+   temumamontanhaeaoladodamontanhatemumsoleamontanhanãopegafogodejeitonenhum=loadImage("bg.png")
+}
 function setup(){
     var canvas = createCanvas(1260,600);
     engine = Engine.create();
@@ -20,11 +23,13 @@ function setup(){
     box5 = new Box(810,420,50,50)
     NEWpigmanXDzinho2  = new Pigboyxd(810,460)
     caixalonga2 = new caixinha (810,440,300,PI/2) 
-    passarinhocarioca= new pasarrobravo(10,10)                  
+    passarinhocarioca= new pasarrobravo(10,10)     
+    caichalonga3 = new caixinha(300,20,100, PI/2)  
+     restrição = new Quemdissequegalinhanãosabevoar(passarinhocarioca.body, caichalonga3.body)           
 }
 //TESTANDOXDZIHNOS//
 function draw(){
-    background(0);
+    background(temumamontanhaeaoladodamontanhatemumsoleamontanhanãopegafogodejeitonenhum);
     Engine.update(engine);
     box1.display();
    chaopontocom.display();
@@ -37,6 +42,8 @@ function draw(){
    caixalonga2.display()
    box5.display()
    passarinhocarioca.display()
+   caichalonga3.display()
+   restrição.display()
 
    
 }
