@@ -4,8 +4,7 @@ class pasarrobravo extends Box {
      this.image=loadImage("bird.png"); 
     }
  display (){
-    this.body.position.x=mouseX
-    this.body.position.y=mouseY
+
     super.display()
  }
   };

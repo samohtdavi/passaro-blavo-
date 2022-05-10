@@ -1,8 +1,8 @@
 class Quemdissequegalinhanãosabevoar {
-    constructor(bodyA, bodyB) {
+    constructor(bodyA, pointB) {
       var options = {
           bodyA:bodyA,
-          bodyB:bodyB,
+          pointB:pointB,
           stiffness: 0.04,
           length: 10
       }
@@ -10,10 +10,17 @@ class Quemdissequegalinhanãosabevoar {
       
       World.add(world, this.body);
     }
+    fire(){
+      this.body.bodyA=null
+    }
     display(){
+      if (this.body.bodyA){
+
+      
       var pontoA =this.body.bodyA.position;
-      var pontoB=this.body.bodyB.position
+      var pontoB=this.body.pointB
       line (pontoA.x,pontoA.y,pontoB.x,pontoB.y)
+    }
       
       
     }

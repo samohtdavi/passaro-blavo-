@@ -24,8 +24,8 @@ function setup(){
     NEWpigmanXDzinho2  = new Pigboyxd(810,460)
     caixalonga2 = new caixinha (810,440,300,PI/2) 
     passarinhocarioca= new pasarrobravo(10,10)     
-    caichalonga3 = new caixinha(300,20,100, PI/2)  
-     restrição = new Quemdissequegalinhanãosabevoar(passarinhocarioca.body, caichalonga3.body)           
+     
+     restrição = new Quemdissequegalinhanãosabevoar(passarinhocarioca.body,{x:200,y:300})           
 }
 //TESTANDOXDZIHNOS//
 function draw(){
@@ -42,8 +42,14 @@ function draw(){
    caixalonga2.display()
    box5.display()
    passarinhocarioca.display()
-   caichalonga3.display()
    restrição.display()
 
    
+}
+function mouseDragged(){
+ Matter.Body.setPosition(passarinhocarioca.body,{x:mouseX,y:mouseY})
+  
+}
+function mouseReleased(){
+   restrição.fire()
 }
