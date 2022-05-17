@@ -4,6 +4,7 @@ const Bodies = Matter.Bodies;
 
 var engine, world;
 var box1; 
+var chao2;
 var temumamontanhaeaoladodamontanhatemumsoleamontanhanãopegafogodejeitonenhum 
 function preload(){
    temumamontanhaeaoladodamontanhatemumsoleamontanhanãopegafogodejeitonenhum=loadImage("bg.png")
@@ -13,6 +14,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
     chaopontocom = new Chao (630,600,1260,30)
+    chao2= new Chao (200,550,200,200)
 
     box1 = new Box(700,500,50,50);
     box2 = new Box(920,500,50,50);
@@ -43,6 +45,7 @@ function draw(){
    box5.display()
    passarinhocarioca.display()
    restrição.display()
+   chao2.display()
 
    
 }
