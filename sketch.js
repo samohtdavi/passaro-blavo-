@@ -23,7 +23,7 @@ function setup(){
     box3 = new Box(700,460,50,50);
     box4 = new Box(920,460,50,50);
     box5 = new Box(810,420,50,50)
-    NEWpigmanXDzinho2  = new Pigboyxd(810,460)
+    NEWpigmanXDzinho2  = new Pigboyxd(810,465)
     caixalonga2 = new caixinha (810,440,300,PI/2) 
     passarinhocarioca= new pasarrobravo(10,10)     
      
@@ -55,4 +55,11 @@ function mouseDragged(){
 }
 function mouseReleased(){
    restrição.fire()
+  
+}
+function keyPressed(){
+   if(keyCode===32){
+      restrição.jorgevaipraseucantoagr(passarinhocarioca.body)
+
+   }
 }

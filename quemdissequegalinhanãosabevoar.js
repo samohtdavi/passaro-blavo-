@@ -12,9 +12,14 @@ class Quemdissequegalinhanãosabevoar {
       this.sling3= loadImage('sling3.png') 
       World.add(world, this.body);
     }
+    jorgevaipraseucantoagr(body){
+      this.body.bodyA=body
+      
+      }
     fire(){
-      this.body.bodyA=null
+      this.body.bodyA=null           
     }
+    
     display(){
       image (this.sling1, 205,260)
       image (this.sling2, 177,260)
